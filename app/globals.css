@@ -123,3 +123,13 @@
     @apply text-foreground;
   }
 }
+@keyframes fade-out {
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+}
+
+.animate-fade-out {
+  animation: fade-out 0.5s ease-out forwards;
+}
