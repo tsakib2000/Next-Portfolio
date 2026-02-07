@@ -1,9 +1,11 @@
-import { Skills } from "@/components/skills";
+import LiquidGlass from "@/components/liquidGlass";
+import { IconCloudDemo } from "@/components/skills";
+
 import { FlickeringGrid } from "@/components/ui/flickering-grid";
 import React from "react";
 
 export default function Home(): React.ReactElement {
-  return (<div className="bg-black relative min-h-screen w-full overflow-hidden ">
+  return (<div className=" relative min-h-screen w-full overflow-hidden ">
            <FlickeringGrid
         className="absolute inset-0 z-0 size-full"
         squareSize={4}
@@ -12,7 +14,8 @@ export default function Home(): React.ReactElement {
         maxOpacity={0.5}
         flickerChance={0.1} 
       />
-      {/* <Skills/> */}
+     <IconCloudDemo/>
+      {/* <LiquidGlass/> */}
 
       </div>
   );
