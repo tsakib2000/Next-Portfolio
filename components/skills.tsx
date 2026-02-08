@@ -16,7 +16,7 @@ const slugs = [
   "nextdotjs",
   "prisma",
   "amazonaws",
-  "postgresql",
+  
   "firebase",
   "nginx",
   "vercel",
@@ -29,8 +29,7 @@ const slugs = [
   "github",
   "gitlab",
   "visualstudiocode",
-  "androidstudio",
-  "sonarqube",
+ 
   "figma",
 ]
 
