@@ -17,7 +17,7 @@ function AboutMe() {
                 </LineShadowText></h1>
                 <p>Forntend Developer</p>
             </div>
-            <div className='z-10'>
+            <div className='z-30'>
                 <Image
                     src="/profile.png"
                     width={200}
