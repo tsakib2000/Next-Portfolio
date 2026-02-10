@@ -3,6 +3,7 @@ import { useTheme } from 'next-themes';
 import Image from 'next/image'
 import { LineShadowText } from './ui/line-shadow-text';
 import Typewriter from 'typewriter-effect';
+import { AnimatedThemeToggler } from './ui/animated-theme-toggler';
 
 
 function AboutMe() {
@@ -25,6 +26,7 @@ function AboutMe() {
                     }}
                 />
                 </h1>
+                
             </div>
             <div className='z-30'>
                 <Image

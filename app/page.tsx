@@ -6,7 +6,8 @@ import { FlickeringGrid } from "@/components/ui/flickering-grid";
 import React from "react";
 
 export default function Home(): React.ReactElement {
-  return (<div className="  relative min-h-screen  overflow-hidden ">
+  return (
+  <div className=" dark:bg-black relative min-h-screen  overflow-hidden ">
            <FlickeringGrid
         className="absolute inset-0 z-0 size-full"
         squareSize={3}
