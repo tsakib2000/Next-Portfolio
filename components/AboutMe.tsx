@@ -6,6 +6,7 @@ import Typewriter from 'typewriter-effect';
 import { AnimatedThemeToggler } from './ui/animated-theme-toggler';
 
 
+
 function AboutMe() {
     const theme = useTheme()
     const shadowColor = theme.resolvedTheme === "dark" ? "white" : "black"
@@ -19,14 +20,14 @@ function AboutMe() {
                     </LineShadowText></h1>
                 <h1 className='text-3xl mt-3.5'>
                     <Typewriter
-                    options={{
-                        strings: ['Frontend Developer', 'Mern Stack developer'],
-                        autoStart: true,
-                        loop: true,
-                    }}
-                />
+                        options={{
+                            strings: ['Frontend Developer', 'Mern Stack developer'],
+                            autoStart: true,
+                            loop: true,
+                        }}
+                    />
                 </h1>
-                
+
             </div>
             <div className='z-30'>
                 <Image
@@ -35,7 +36,18 @@ function AboutMe() {
                     height={300}
                     alt="Picture of the author"
                 />
+
             </div>
+        </div>
+        <div>
+            <h3 className='text-2xl font-semibold mb-4'>About</h3>
+            <p className='text-justify'>Hi, I’m <strong>Tauhidul Islam,</strong> an aspiring MERN Stack Developer with a strong focus on front-end development. My journey into web development began at the end of 2023 with a deep curiosity about how websites work. What started as exploration quickly grew into a full-fledged passion and career goal.
+
+                I began with HTML, CSS, and JavaScript, and through consistent practice and dedication, I expanded my skill set to include TypeScript, React.js, Next.js, and Tailwind CSS. I also have hands-on experience with Firebase Authentication and a foundational understanding of backend technologies such as Express.js and MongoDB.
+
+                Creating clean, responsive, and visually appealing user interfaces is my forte. I enjoy transforming complex ideas into functional, interactive, and user-friendly web experiences. My focus is always on writing maintainable code, following modern best practices, and building products that deliver real value to users.
+
+                I am continuously learning, improving my problem-solving skills, and working on real-world projects to strengthen my development expertise. My goal is to grow as a professional developer and contribute to impactful web applications.</p>
         </div>
 
     </>);
