@@ -29,7 +29,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-<SmoothCursor/>
+{/* <SmoothCursor/> */}
         {/* <MouseTrail  imageSrc="/vercel.svg" maxTrails={15} /> */}
         {children}
       </body>

@@ -3,10 +3,7 @@ import { useTheme } from 'next-themes';
 import Image from 'next/image'
 import { LineShadowText } from './ui/line-shadow-text';
 import Typewriter from 'typewriter-effect';
-
-import { ShimmerButton } from './ui/shimmer-button';
 import { RainbowButton } from './ui/rainbow-button';
-import Link from 'next/link';
 
 
 
@@ -53,7 +50,7 @@ function AboutMe() {
                 I am continuously learning, improving my problem-solving skills, and working on real-world projects to strengthen my development expertise. My goal is to grow as a professional developer and contribute to impactful web applications.</p>
         </div>
 
-        <div className='flex gap-4'>
+        <div className='flex gap-4 mb-7'>
             <RainbowButton className='mt-7'> <a
                 href="https://www.linkedin.com/in/tauhidul-islam-s0212"
                 target="_blank"
