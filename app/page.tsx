@@ -2,6 +2,8 @@ import AboutMe from "@/components/AboutMe";
 
 
 
+
+
 import { FlickeringGrid } from "@/components/ui/flickering-grid";
 
 import React from "react";
@@ -18,9 +20,9 @@ export default function Home(): React.ReactElement {
         flickerChance={0.1} 
       />
      
-     <div className="w-2/3 pt-10 mx-auto">
+     <div className="w-11/12 md:w-2/3 pt-10 mx-auto">
         <AboutMe/>
-        
+       
       </div>
       
       </div>
