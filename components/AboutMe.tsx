@@ -52,14 +52,23 @@ function AboutMe() {
 
                 I am continuously learning, improving my problem-solving skills, and working on real-world projects to strengthen my development expertise. My goal is to grow as a professional developer and contribute to impactful web applications.</p>
         </div>
-           
-<RainbowButton className='mt-7'> <a 
-    href="https://www.linkedin.com/in/tauhidul-islam-s0212" 
-    target="_blank" 
-    rel="noopener noreferrer"
-  >
-    Connect on LinkedIn
-  </a></RainbowButton>
+
+        <div className='flex gap-4'>
+            <RainbowButton className='mt-7'> <a
+                href="https://www.linkedin.com/in/tauhidul-islam-s0212"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+            LinkedIn
+            </a></RainbowButton>
+            <RainbowButton className='mt-7'> <a
+                href="https://github.com/tsakib2000"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                GitHub
+            </a></RainbowButton>
+        </div>
     </>);
 }
 
