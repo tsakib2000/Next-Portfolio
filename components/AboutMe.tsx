@@ -41,7 +41,7 @@ function AboutMe() {
         </div>
         <div>
             <h3 className='text-2xl font-semibold my-8'>About</h3>
-            <p className='text-justify'>Hi, I’m <strong>Tauhidul Islam,</strong> an aspiring MERN Stack Developer with a strong focus on front-end development. My journey into web development began at the end of 2023 with a deep curiosity about how websites work. What started as exploration quickly grew into a full-fledged passion and career goal.
+            <p className='text-justify capitalize'>Hi, I’m <strong>Tauhidul Islam,</strong> an aspiring MERN Stack Developer with a strong focus on front-end development. My journey into web development began at the end of 2023 with a deep curiosity about how websites work. What started as exploration quickly grew into a full-fledged passion and career goal.
 
                 I began with HTML, CSS, and JavaScript, and through consistent practice and dedication, I expanded my skill set to include TypeScript, React.js, Next.js, and Tailwind CSS. I also have hands-on experience with Firebase Authentication and a foundational understanding of backend technologies such as Express.js and MongoDB.
 
