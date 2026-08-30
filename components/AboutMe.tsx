@@ -1,21 +1,19 @@
 'use client'
-import { useTheme } from 'next-themes';
 import Image from 'next/image'
 import { LineShadowText } from './ui/line-shadow-text';
 import Typewriter from 'typewriter-effect';
 import { RainbowButton } from './ui/rainbow-button';
+import Skills from './Skills';
 
 
 
 function AboutMe() {
-    const theme = useTheme()
-    // const shadowColor = theme.resolvedTheme === "dark" ? "white" : "black"
     return (<>
         <div className=' h-auto flex justify-between flex-col md:flex-row items-center z-10'>
             <div>
                 <h1 className="text-3xl leading-none font-semibold tracking-tighter text-balance sm:text-6xl md:text-7xl lg:text-8xl z-50">
-                    Hi, I'm
-                    <LineShadowText className="italic" shadowColor={'white'}>
+                    Hi, I&apos;m 
+                    <LineShadowText className="italic mr-1.5" shadowColor={'white'}>
                  
                         Tauhidul
                   
@@ -72,6 +70,8 @@ function AboutMe() {
                 GitHub
             </a></RainbowButton>
         </div>
+
+        <Skills />
     </>);
 }
 

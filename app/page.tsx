@@ -26,7 +26,7 @@ export default function Home(): React.ReactElement {
       </div>
       
       </div>
-     
+      
       </>
   );
 };

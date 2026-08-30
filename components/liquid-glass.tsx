@@ -41,12 +41,10 @@ export const LiquidGlassCard = ({
 }: LiquidGlassCardProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const handleToggleExpansion = (e: {
-    target: { closest: (arg0: string) => any };
-  }) => {
+  const handleToggleExpansion = (e: React.MouseEvent<HTMLElement>) => {
     if (!expandable) return;
     // Don't toggle if clicking on interactive elements
-    if (e.target.closest('a, button, input, select, textarea')) return;
+    if (e.currentTarget.closest('a, button, input, select, textarea')) return;
     setIsExpanded(!isExpanded);
   };
 
@@ -79,7 +77,7 @@ export const LiquidGlassCard = ({
       '0 4px 4px rgba(0, 0, 0, 0.15), 0 0 12px rgba(0, 0, 0, 0.08), 0 0 60px rgba(255, 255, 255, 0.3)',
   };
 
-  const containerVariants = expandable
+  const containerVariants: React.ComponentProps<typeof motion.div>['variants'] = expandable
     ? {
         collapsed: {
           width: width || 'auto',
@@ -100,9 +98,9 @@ export const LiquidGlassCard = ({
       }
     : {};
 
-  const MotionComponent = draggable || expandable ? motion.div : 'div';
+  const MotionComponent = motion.div;
 
-  const motionProps =
+  const motionProps: React.ComponentProps<typeof motion.div> =
     draggable || expandable
       ? {
           variants: expandable ? containerVariants : undefined,
