@@ -25,10 +25,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body
       suppressHydrationWarning
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-r from-slate-900 to-slate-700 `}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
 
         {/* <MouseTrail  imageSrc="/vercel.svg" maxTrails={15} /> */}

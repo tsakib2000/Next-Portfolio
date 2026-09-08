@@ -11,7 +11,7 @@ function Skills() {
     <section id="skills" className="py-16">
       <h3 className="text-2xl font-semibold my-8">Skills</h3>
 
-      <div className="relative flex h-[500px] w-full items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900">
+      <div className="relative flex h-[500px] w-full items-center justify-center overflow-hidden rounded-2xl">
         <span className="pointer-events-none absolute whitespace-pre-wrap bg-gradient-to-b from-slate-100 via-slate-400 to-slate-300 text-7xl font-bold tracking-tighter text-transparent opacity-20 [background-clip:text]">
        
         </span>

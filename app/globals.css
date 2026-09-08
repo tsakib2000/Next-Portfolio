@@ -5,7 +5,7 @@
 
 *{
   font-family: "JetBrains Mono", monospace;
-  
+
 }
 input,
 textarea,
@@ -80,21 +80,28 @@ select {
   @keyframes shimmer-slide {
   to {
     transform: translate(calc(100cqw - 100%), 0);
+
     }
+
   }
   @keyframes spin-around {
   0% {
     transform: translateZ(0) rotate(0);
+
     }
   15%, 35% {
     transform: translateZ(0) rotate(90deg);
+
     }
   65%, 85% {
     transform: translateZ(0) rotate(270deg);
+
     }
   100% {
     transform: translateZ(0) rotate(360deg);
+
     }
+
   }
   --animate-rainbow: rainbow var(--speed, 2s) infinite linear;
   --color-color-5: var(--color-5);
@@ -213,8 +220,12 @@ select {
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    background-color: #100e0b;
+  }
   body {
-    @apply bg-background text-white;
+    @apply text-white;
+    background-color: #100e0b;
   }
 }
 

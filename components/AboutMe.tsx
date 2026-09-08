@@ -2,7 +2,8 @@
 import Image from 'next/image'
 import { LineShadowText } from './ui/line-shadow-text';
 import Typewriter from 'typewriter-effect';
-import { RainbowButton } from './ui/rainbow-button';
+import { RainbowButton,  } from './ui/rainbow-button';
+import { ShimmerButton } from "@/components/ui/shimmer-button"
 import Skills from './Skills';
 
 
@@ -55,20 +56,20 @@ function AboutMe() {
         </div>
 
         <div className='flex gap-4 mb-7'>
-            <RainbowButton className='mt-7'> <a
+            <ShimmerButton className='mt-7'> <a
                 href="https://www.linkedin.com/in/tauhidul-islam-s0212"
                 target="_blank"
                 rel="noopener noreferrer"
             >
             LinkedIn
-            </a></RainbowButton>
-            <RainbowButton className='mt-7'> <a
+            </a></ShimmerButton>
+            <ShimmerButton className='mt-7'> <a
                 href="https://github.com/tsakib2000"
                 target="_blank"
                 rel="noopener noreferrer"
             >
                 GitHub
-            </a></RainbowButton>
+            </a></ShimmerButton>
         </div>
 
         <Skills />
