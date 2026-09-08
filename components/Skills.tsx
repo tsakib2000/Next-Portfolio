@@ -29,10 +29,10 @@ function Skills() {
           radius={110}
           reverse
         >
-          <IconBrandSupabase size={28} />
-          <IconBrandJavascript size={28} />
+          <Icons.supabase />
+          <Icons.javascript  />
           <Flame size={28} />
-          <Github size={28} />
+          <Icons.github />
         </OrbitingCircles>
 
         <div className="flex h-20 w-20 items-center justify-center rounded-full border-2 border-white/20 bg-slate-950 ring-4 ring-white/10">
