@@ -47,9 +47,11 @@ export default function ScrollProgress(props: Props) {
 	}, [containerRef]);
 
 	return (
-		<div
-			className={`fixed top-0 left-0 w-full bg-teal-500 ${className}`}
-			style={{ width: `${scrollProgress}%`, height: `${height}px`, zIndex: 99999 }}
-		/>
+		<div className={`w-full ${className}`} style={{ height: `${height}px` }}>
+			<div
+				className="h-full bg-teal-500 transition-[width] duration-150"
+				style={{ width: `${scrollProgress}%` }}
+			/>
+		</div>
 	);
 }

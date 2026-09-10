@@ -4,6 +4,7 @@ import "./globals.css";
 import MouseTrail from "@/components/MouseTrail";
 import { SmoothCursor } from "@/components/ui/smooth-cursor";
 import ScrollProgress from "@/components/Scroll-Progress-bar";
+import ScrollingText from "@/components/ScrollingText";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,9 +32,12 @@ export default function RootLayout({
       suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ScrollProgress height={5} className="bg-teal-600"/>
+        <div className="sticky top-0 z-50">
+          <ScrollingText />
+          <ScrollProgress height={3} className="bg-teal-600"/>
+        </div>
         {/* <MouseTrail  imageSrc="/vercel.svg" maxTrails={15} /> */}
-        {children}
+        <div className="pt-12">{children}</div>
       </body>
     </html>
   );
