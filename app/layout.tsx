@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import MouseTrail from "@/components/MouseTrail";
 import { SmoothCursor } from "@/components/ui/smooth-cursor";
+import ScrollProgress from "@/components/Scroll-Progress-bar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +31,7 @@ export default function RootLayout({
       suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-
+        <ScrollProgress height={5} className="bg-teal-600"/>
         {/* <MouseTrail  imageSrc="/vercel.svg" maxTrails={15} /> */}
         {children}
       </body>
