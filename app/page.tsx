@@ -23,6 +23,7 @@ export default function Home(): React.ReactElement {
 
       <div className="relative mx-auto w-11/12 pt-10 md:w-2/3">
         <AboutMe />
+        
       </div>
     </div>
   </AuraBackground>

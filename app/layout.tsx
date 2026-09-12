@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import MouseTrail from "@/components/MouseTrail";
-import { SmoothCursor } from "@/components/ui/smooth-cursor";
 import ScrollProgress from "@/components/Scroll-Progress-bar";
 import ScrollingText from "@/components/ScrollingText";
 
@@ -36,7 +34,6 @@ export default function RootLayout({
           <ScrollingText />
           <ScrollProgress height={3} className="bg-teal-600"/>
         </div>
-        {/* <MouseTrail  imageSrc="/vercel.svg" maxTrails={15} /> */}
         <div className="">{children}</div>
       </body>
     </html>

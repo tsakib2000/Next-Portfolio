@@ -2,9 +2,9 @@
 import Image from 'next/image'
 import { LineShadowText } from './ui/line-shadow-text';
 import Typewriter from 'typewriter-effect';
-import { RainbowButton,  } from './ui/rainbow-button';
 import { ShimmerButton } from "@/components/ui/shimmer-button"
 import Skills from './Skills';
+import Experience from './Experience';
 
 
 
@@ -72,7 +72,14 @@ function AboutMe() {
             </a></ShimmerButton>
         </div>
 
-        <Skills />
+        <div className="flex flex-col gap-8 lg:flex-row lg:items-start">
+            <div className="flex-1 lg:w-1/2">
+                <Skills />
+            </div>
+            <div className="flex-1 lg:w-1/2">
+                <Experience />
+            </div>
+        </div>
     </>);
 }
 
