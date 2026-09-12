@@ -37,7 +37,7 @@ export default function RootLayout({
           <ScrollProgress height={3} className="bg-teal-600"/>
         </div>
         {/* <MouseTrail  imageSrc="/vercel.svg" maxTrails={15} /> */}
-        <div className="pt-12">{children}</div>
+        <div className="">{children}</div>
       </body>
     </html>
   );
